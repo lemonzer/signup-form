@@ -1,9 +1,22 @@
 div {
-    display: 'flex';
+    display: flex;
+    justify-content: center;
+
+    
 }
+.form {
+    flex-direction: column;
+    margin-left: 50px;
+}
+.blocks {
+   flex-flow: row wrap;
+   gap: 30px;
+   width: 400px;
+}
+
 img {
+     
     width: 500px; 
     height:100vh; 
     object-fit: cover
 }
-
