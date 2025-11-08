@@ -9,10 +9,12 @@
 <body>
     <div>
         <img src="image1.jpg" alt="Image by Andras Vas upsplash.com">
-        
     <div class="form">
+        <div class="top">
         <p>Please complete all required (*) fields.</p>
+        </div>
     
+        <div class="middle">
         <form action="/my-handling-form-page" method="post">
             <div class="blocks">
             <p>
@@ -25,7 +27,7 @@
             </p>
             <p>
                 <label for="mail" style="display: block;">Email *</label>
-                <input type="email" id="mail" name="user_email" />
+                <input type="email" id="mail" name="user_email" required/>
             </p>
             <p>
                 <label for="phone" style="display: block;">Phone Number</label>
@@ -33,20 +35,24 @@
             </p>
             <p>
                 <label for="password" style="display: block;">Password *</label>
-                <input type="password" id="password" name="user_passowrd" />
+                <input type="password" id="password" name="user_passowrd" required/>
             </p>
              <p>
                 <label for="passwordconfirm" style="display: block;">Confirm Password *</label>
-                <input type="password" id="passwordconfirm" name="user_passowrdconfirm" />
+                <input type="password" id="passwordconfirm" name="user_passowrdconfirm" required/>
             </p>
             
             
-        </div>    
-        </form>
+            </div>    
         
+        </div>
+        
+        <div class="bottom">
         <p>
                 <button type="submit">Create Account</button>
         </p>
+        </div>
+        </form>
     </div>
     </div>
 </body>
